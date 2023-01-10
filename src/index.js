@@ -281,5 +281,17 @@ button[17].addEventListener("click", (event) => {
   nb1 = null;
   nb2 = null;
   click = null;
-  virgule = null;
+  for (let index = 0; index < value.toString().length; index++) {
+    const element = value.toString().charAt(index);
+
+    if (element === ".") {
+      virgule = "util";
+      console.log(virgule);
+    }
+  }
+  // if (value.indexOf(".") > 0) {
+  //   virgule = "util";
+  // } else {
+  //   virgule = null;
+  // }
 });
